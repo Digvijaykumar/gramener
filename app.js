@@ -1,9 +1,7 @@
-/*SEARCH BY USING A CITY NAME (e.g. athens) OR A COMMA-SEPARATED CITY NAME ALONG WITH THE COUNTRY CODE (e.g. athens,gr)*/
 const frm = document.getElementById('form');
 const input = $('#cityName');
 const msg = $('.msg');
 const list = $('.cities');
-/*SUBSCRIBE HERE FOR API KEY: https://home.openweathermap.org/users/sign_up*/
 const apiKey = "5026d0b670d5d0961291b2cf922dafd8";
 
 function frmSubmit(){
@@ -36,8 +34,6 @@ function frmSubmit(){
              <figcaption>${weather[0]["description"]}</figcaption>
            </figure>
          `;
-        //  li.innerHTML = markup;
-        //  list.appendChild(li);
         $('.cities').html(markup);
        })
        .catch(() => {
