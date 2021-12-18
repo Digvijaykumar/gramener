@@ -10,12 +10,7 @@ function frmSubmit(){
     debugger;
     // e.preventDefault();
      let inputVal = $('#cityName').val();
-   
 
-   
-    
-   
-     //ajax here
      const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${apiKey}&units=metric`;
    debugger;
      fetch(url)

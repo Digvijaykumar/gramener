@@ -100,14 +100,10 @@
     padding: 15px 20px;
     margin-left: 15px;
     border-radius: 5px;
-    background: var(--red);
     transition: background 0.3s ease-in-out;
   }
   
-  .top-banner form button:hover {
-    background: var(--darkred);
-  }
-  
+ 
   .top-banner form .msg {
     position: absolute;
     bottom: -40px;
